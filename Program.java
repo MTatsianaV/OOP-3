@@ -22,9 +22,9 @@ public class Program {
         int age = random.nextInt(25, 50);
         String kind_Employee = employees[random.nextInt(employees.length)];
         if (kind_Employee == "Worker") {
-            return new Worker(names[random.nextInt(2)], surnames[random.nextInt(surnames.length)], age, salaryWorker);
+            return new Worker(names[random.nextInt(names.length)], surnames[random.nextInt(surnames.length)], age, salaryWorker);
         } else {
-            return new Freelancer(names[random.nextInt(2)], surnames[random.nextInt(surnames.length)], age,
+            return new Freelancer(names[random.nextInt(names.length)], surnames[random.nextInt(surnames.length)], age,
                     salaryFrelanser);
         }
     }
